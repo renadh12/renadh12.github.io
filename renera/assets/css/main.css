@@ -396,7 +396,7 @@ textarea {
   input,
   select,
   textarea {
-    font-size: 7pt;
+    font-size: 9pt;
   }
 }
 @media screen and (max-width: 980px) {
@@ -420,7 +420,7 @@ textarea {
   input,
   select,
   textarea {
-    font-size: 8pt;
+    font-size: 10pt;
   }
 }
 
@@ -442,7 +442,7 @@ a:hover {
 strong,
 b {
   color: #fff;
-  font-weight: 400;
+  font-weight: 550;
 }
 
 em,
@@ -461,7 +461,7 @@ h4,
 h5,
 h6 {
   color: #fff;
-  font-weight: 400;
+  font-weight: 550;
   line-height: 1em;
   margin: 0 0 1em 0;
 }
@@ -476,13 +476,13 @@ h6 a {
 }
 
 h1 {
-  font-size: 1.5em;
-  line-height: 0.25em;
+  font-size: 2.0em;
+  line-height: 0.75em;
 }
 
 h2 {
-  font-size: 0.75em;
-  line-height: 0.5em;
+  font-size: 1.25em;
+  line-height: 0.75em;
 }
 
 h3 {
@@ -528,7 +528,7 @@ code {
   background: rgba(255, 255, 255, 0.125);
   border-radius: 6px;
   border: solid 2px rgba(255, 255, 255, 0.35);
-  font-family: 'Courier New', monospace;
+  font-family: 'Trirongo', monospace;
   font-size: 0.9em;
   margin: 0 0.25em;
   padding: 0.25em 0.65em;
@@ -1070,9 +1070,9 @@ button:disabled,
 
 /* Header */
 #header h1 {
-  font-size: 2.25em;
+  font-size: 3.00em;
   font-family: 'Trirong', sans-serif;
-  font-weight: 400;
+  font-weight: 550;
   align-items: center;
   margin: 0 0 0.55em 0;
 }
