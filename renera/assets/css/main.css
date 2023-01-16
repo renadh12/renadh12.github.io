@@ -378,7 +378,7 @@ select,
 textarea {
   color: rgba(255, 255, 255, 0.75);
   font-family: 'Roboto', sans-serif;
-  font-size: 16pt;
+  font-size: 8pt;
   font-weight: 400;
   letter-spacing: -0.01em;
   line-height: 1.65em;
@@ -388,7 +388,7 @@ textarea {
   input,
   select,
   textarea {
-    font-size: 12pt;
+    font-size: 8pt;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -404,7 +404,7 @@ textarea {
   input,
   select,
   textarea {
-    font-size: 12pt;
+    font-size: 8pt;
   }
 }
 @media screen and (max-width: 736px) {
@@ -412,7 +412,7 @@ textarea {
   input,
   select,
   textarea {
-    font-size: 12pt;
+    font-size: 8pt;
   }
 }
 @media screen and (max-width: 480px) {
