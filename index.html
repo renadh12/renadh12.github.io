@@ -11,6 +11,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Additional CSS for side-by-side featured projects */
+			.featured-projects {
+				display: flex;
+				gap: 2rem;
+				margin-bottom: 3rem;
+			}
+			
+			.featured-projects .post.featured {
+				flex: 1;
+			}
+			
+			/* Responsive design for mobile */
+			@media (max-width: 768px) {
+				.featured-projects {
+					flex-direction: column;
+					gap: 1.5rem;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -20,7 +40,7 @@
 				<!-- Intro -->
 					<div id="intro">
 						<h1>Hi, I'm Renadh</h1>
-						<p>platform engineer based in Austin, Texas. <br>Currently working at VISA AI Platform & Real-Time Inference.<br></p>
+						<p>Platform Engineer based in Austin, Texas. <br>Currently working at VISA AI Platform & Real-Time Inference.<br></p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -47,7 +67,8 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Featured Post -->
+						<!-- Featured Projects Section -->
+						<section class="featured-projects">
 							<article class="post featured">
 								<header class="major">
 									<h2><a href="https://github.com/renadh12/projectX" target="_blank">projectX</a></h2>
@@ -56,10 +77,22 @@
 								</header>
 								<a href="https://github.com/renadh12/projectX" target="_blank" class="image main"><img src="" alt="" /></a>
 								<ul class="actions special">
-									
 									<li><a href="https://github.com/renadh12/projectX" target="_blank" class="button large">Git Repo</a></li>
 								</ul>
 							</article>
+
+							<article class="post featured">
+								<header class="major">
+									<h2><a href="https://github.com/renadh12/platml" target="_blank">PlatML</a></h2>
+									<p><strong>A proof-of-concept ML platform with independent model management and serving APIs, built with Rust (Axum), React, and deployed on Google Kubernetes Engine (GKE).</strong></p>
+									<p>ML model deployment requires complex ML infrastructure and specialized expertise. This solution offers a dead-simple API to deploy models in under a minute, powered by Rust's performance.</p>
+								</header>
+								<a href="https://github.com/renadh12/platml" target="_blank" class="image main"><img src="" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="https://github.com/renadh12/platml" target="_blank" class="button large">Git Repo</a></li>
+								</ul>
+							</article>
+						</section>
 
 						<!-- Posts -->
 							<section class="posts">
@@ -106,7 +139,7 @@
 										<h2><a href="https://github.com/renadh12/bank-loans/blob/master/PDA_Project_Renadh.ipynb" target="_blank">Bank Loan Data </br>Analysis & Visualization</a></h2>
 									</header>
 									<a href="https://github.com/renadh12/bank-loans/blob/master/PDA_Project_Renadh.ipynb" target="_blank" class="image fit"><img src="images/nycds.png" alt="" /></a>
-									<p><strong>Read, structure, manipulate</strong> and <strong>compute 45,211 bank account data</strong> using <strong>Pandas’ DataFrame & Series</strong> with marital status, education, job, account balance as key variables. Utilize <strong>Matplotlib’s PyPlot</strong> to create his- tograms, bar charts, scatterplots to <strong>visualize</strong> aggregate results.</p>
+									<p><strong>Read, structure, manipulate</strong> and <strong>compute 45,211 bank account data</strong> using <strong>Pandas' DataFrame & Series</strong> with marital status, education, job, account balance as key variables. Utilize <strong>Matplotlib's PyPlot</strong> to create his- tograms, bar charts, scatterplots to <strong>visualize</strong> aggregate results.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/renadh12/bank-loans/blob/master/PDA_Project_Renadh.ipynb" target="_blank" class="button">Git Repo</a></li>
 									</ul>
