@@ -12,24 +12,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* Additional CSS for side-by-side featured projects */
-			.featured-projects {
-				display: flex;
-				gap: 2rem;
-				margin-bottom: 3rem;
-			}
-			
-			.featured-projects .post.featured {
-				flex: 1;
-			}
-			
-			/* Responsive design for mobile */
-			@media (max-width: 768px) {
-				.featured-projects {
-					flex-direction: column;
-					gap: 1.5rem;
-				}
-			}
+			/* Remove the side-by-side featured projects CSS since we're back to single featured post */
 		</style>
 	</head>
 	<body class="is-preload">
@@ -67,35 +50,31 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Featured Projects Section -->
-						<section class="featured-projects">
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="https://github.com/renadh12/projectX" target="_blank">projectX</a></h2>
-									<p><a href="https://github.com/renadh12/projectX" target="_blank"></a><strong>An end to end data/ML engineering project.</strong></p>
-									<p>This project serves as an end-to-end template for Data/ML engineering using PySpark, Docker, and Kubernetes on Azure. The PySpark code processes the datasets, trains and evaluates a Linear Regression model, returns the predicted total bill, coefficients, intercept, R-squared, Mean Absolute Error, and Mean Squared Error. The Python code is dockerized, and deployed to an Azure Kubernetes Services (AKS) cluster.</p>
-								</header>
-								<a href="https://github.com/renadh12/projectX" target="_blank" class="image main"><img src="" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/renadh12/projectX" target="_blank" class="button large">Git Repo</a></li>
-								</ul>
-							</article>
-
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="https://github.com/renadh12/platml" target="_blank">PlatML</a></h2>
-									<p><strong>A proof-of-concept ML platform with independent model management and serving APIs, built with Rust (Axum), React, and deployed on Google Kubernetes Engine (GKE).</strong></p>
-									<p>ML model deployment requires complex ML infrastructure and specialized expertise. This solution offers a dead-simple API to deploy models in under a minute, powered by Rust's performance.</p>
-								</header>
-								<a href="https://github.com/renadh12/platml" target="_blank" class="image main"><img src="" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/renadh12/platml" target="_blank" class="button large">Git Repo</a></li>
-								</ul>
-							</article>
-						</section>
+						<!-- Featured Post -->
+						<article class="post featured">
+							<header class="major">
+								<h2><a href="https://github.com/renadh12/platml" target="_blank">PlatML</a></h2>
+								<p><strong>A proof-of-concept ML platform with independent model management and serving APIs</strong></p>
+								<p>ML model deployment requires complex ML infrastructure and specialized expertise. Built with Rust (Axum), React, and deployed on Google Kubernetes Engine (GKE), this solution provides a dead-simple API to deploy models in under a minute, powered by Rust's performance.</p>
+							</header>
+							<a href="https://github.com/renadh12/platml" target="_blank" class="image main"><img src="" alt="" /></a>
+							<ul class="actions special">
+								<li><a href="https://github.com/renadh12/platml" target="_blank" class="button large">Git Repo</a></li>
+							</ul>
+						</article>
 
 						<!-- Posts -->
 							<section class="posts">
+								<article>
+									<header>
+										<h2><a href="https://github.com/renadh12/projectX" target="_blank">projectX</a></h2>
+									</header>
+									<a href="https://github.com/renadh12/projectX" target="_blank" class="image fit"><img src="" alt="" /></a>
+									<p><strong>An end to end data/ML engineering project.</strong> This project serves as an end-to-end template for Data/ML engineering using PySpark, Docker, and Kubernetes on Azure. The PySpark code processes the datasets, trains and evaluates a Linear Regression model, returns the predicted total bill, coefficients, intercept, R-squared, Mean Absolute Error, and Mean Squared Error. The Python code is dockerized, and deployed to an Azure Kubernetes Services (AKS) cluster.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/renadh12/projectX" target="_blank" class="button">Git Repo</a></li>
+									</ul>
+								</article>
 								<article>
 									<header>
 										<h2><a href="https://github.com/renadh12/FlaskWebApp" target="_blank">thebloglog</a></h2>
