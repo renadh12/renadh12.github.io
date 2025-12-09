@@ -14,59 +14,40 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Portfolio</a>
+						<a href="stripe.html" class="logo">Relevant Work</a>
 					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">Projects</a></li>
-							<li class="active"><a href="secrets-infra.html">Secrets & Certificate Infrastructure</a></li>
-							<li><a href="assets/res2.pdf" target="_blank">Resume</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://github.com/renadh12" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/renadh-chowdhury-3591571b4/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>		
-						</ul>
-					</nav>
 
 				<!-- Main -->
 					<div id="main">
-
-						<!-- Page Header -->
-						<header class="major">
-							<h1>Secrets & Certificate Infrastructure</h1>
-							<p>Production-grade cryptographic identity and secrets management systems</p>
-						</header>
 
 						<!-- Posts -->
 						<section class="posts">
 							<article>
 								<header>
-									<h2>Enterprise Encryption Integration (Python)</h2>
+									<h2>Galois/Counter Mode (GCM) Encryption Backend (Python)</h2>
 								</header>
 								<p>Implemented GCM authenticated encryption backend for ML serving application's data protection layer using Visa's internal crypto library (its framework backed by Intel SGX enclaves and Thales HSM) via ctypes FFI. Built configurable IV handling (static/random/prepended modes) and AAD support, addressing critical latency requirements for real-time fraud risk scoring requiring encryption of multiple PAN and non-PAN fields per transaction.</p>
 							</article>
 
 							<article>
 								<header>
-									<h2>Certificate Management Automation (Tech Lead)</h2>
+									<h2>PKI Lifecycle Management Automation (Kubernetes)</h2>
 								</header>
 								<p>Architected and led end-to-end certificate management automation for on-premises Kubernetes infrastructure, reducing provisioning time from 2 days to 30 minutes and enabling self-service for 30+ engineers across 20+ services. Designed workflow encompassing server/client cert provisioning, SAN management, Kafka ACLs, JKS-to-PEM conversion, secure certificate storage and mounting at container runtime via Configuration-as-a-Service and vault role ID mapping to application deployments. Mentored junior engineers on CaaS API implementation for automated certificate lifecycle management.</p>
 							</article>
 
 							<article>
 								<header>
-									<h2>Istio Gateway TLS Configuration</h2>
+									<h2>Cross-Platform Secret Proxy Service (Golang)</h2>
 								</header>
-								<p>Diagnosed uneven pod traffic distribution in Istio Gateway caused by PASSTHROUGH mode operating at the TCP connection level, preventing DestinationRule from balancing per-request. Reconfigured Gateway to MUTUAL TLS mode to decrypt traffic and enable DestinationRule LEAST_CONN algorithm for request-level distribution.</p>
+								<p>Key contributor to a secret proxy service providing unified gRPC/REST APIs for HashiCorp Vault, Azure Key Vault, and AWS Secrets Manager. Built a two-tier caching mechanism using sync.Map for thread-safe secret and auth token caching with header-based cache bypass. Implemented Azure Key Vault integration with platform-specific health check logic and validated through end-to-end POC on AKS with VMSS-backed node pools, Managed Identity authentication, and role-based Key Vault access.</p>
 							</article>
 
 							<article>
 								<header>
-									<h2>Multi-Cloud Secret Management (Go)</h2>
+									<h2>Istio Gateway Traffic Distribution (TLS/mTLS)</h2>
 								</header>
-								<p>Key contributor to a secret proxy service providing unified gRPC/REST APIs for HashiCorp Vault, Azure Key Vault, and AWS Secrets Manager. Built a two-tier caching mechanism using sync.Map for thread-safe secret and auth token caching with header-based cache bypass. Implemented Azure Key Vault integration with platform-specific health check logic and validated through end-to-end POC on AKS with VMSS-backed node pools, Managed Identity authentication, and role-based Key Vault access.</p>
+								<p>Diagnosed uneven pod traffic distribution in Istio Gateway caused by PASSTHROUGH mode operating at the TCP connection level, preventing DestinationRule from balancing per-request. Reconfigured Gateway to MUTUAL TLS mode to decrypt traffic and enable DestinationRule LEAST_CONN algorithm for request-level distribution.</p>
 							</article>
 						</section>
 
@@ -74,26 +55,6 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<section class="split contact">
-							<section class="alt">
-								<h3>Strengths</h3>
-								<p>Leadership. Adaptability.<br /> 
-								Work Ethic.<br/>Communication.<br/> Solution Oriented.</p>
-							</section>
-						</section>
-						<section class="split contact">
-							<section>
-								<h3>Email</h3>
-								<p><a href="mailto:renadhc@gmail.com">renadhc@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/renadh-chowdhury-3591571b4/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/renadh12" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
 					</footer>
 
 				<!-- Copyright -->
