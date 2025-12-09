@@ -45,7 +45,7 @@
 
 							<article>
 								<header>
-									<h2>Pod Traffic Distribution (Istio Gateway)</h2>
+									<h2>Istio Gateway TLS Reconfiguration</h2>
 								</header>
 								<p>Diagnosed uneven pod traffic distribution caused by Istio Gateway PASSTHROUGH mode operating at the TCP connection level, preventing request-level load balancing by DestinationRule. Reconfigured Gateway to MUTUAL TLS mode to decrypt traffic and enable DestinationRule LEAST_CONN algorithm for request-level distribution.</p>
 							</article>
